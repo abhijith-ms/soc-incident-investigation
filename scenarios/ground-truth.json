@@ -1,0 +1,9 @@
+{
+  "case_id": "SOC-CASE-001",
+  "classification": "synthetic authorized lab simulation",
+  "expected_record_order": ["101", "102", "103", "104"],
+  "encoded_event_record_id": "103",
+  "expected_decoded_text": "Write-Output 'SOC-LAB-P2'",
+  "expected_disposition": "authorized simulation with benign decoded text",
+  "limitations": "No Windows process was executed; no real compromise or endpoint acquisition is claimed."
+}

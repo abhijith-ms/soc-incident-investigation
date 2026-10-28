@@ -1,0 +1,14 @@
+name: Custom.SOC.CaseFiles
+description: |
+  Acquire only the two named synthetic case files. This is a Linux collection
+  exercise using exported Windows-shaped fixtures, not Windows endpoint forensics.
+type: CLIENT
+parameters:
+  - name: CaseDirectory
+    description: Directory containing the synthetic alert.json and events.jsonl files.
+sources:
+  - query: |
+      SELECT Name AS FileName, Size,
+             hash(path=OSPath).SHA256 AS SHA256,
+             upload(file=OSPath) AS Upload
+      FROM glob(globs=[CaseDirectory + "/alert.json", CaseDirectory + "/events.jsonl"])

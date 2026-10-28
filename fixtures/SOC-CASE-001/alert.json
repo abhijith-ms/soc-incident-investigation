@@ -1,0 +1,29 @@
+{
+  "synthetic": true,
+  "timestamp": "2026-10-28T04:30:11Z",
+  "rule": {
+    "id": "100100",
+    "level": 7,
+    "description": "Synthetic reference to Project 1 encoded PowerShell rule; not an exported live alert"
+  },
+  "data": {
+    "win": {
+      "system": {
+        "providerName": "Microsoft-Windows-Sysmon",
+        "channel": "Microsoft-Windows-Sysmon/Operational",
+        "eventID": "1",
+        "eventRecordID": "103",
+        "computer": "SOC-WIN-LAB",
+        "systemTime": "2026-10-28T04:30:10Z"
+      },
+      "eventdata": {
+        "image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "commandLine": "powershell.exe -NoProfile -EncodedCommand VwByAGkAdABlAC0ATwB1AHQAcAB1AHQAIAAnAFMATwBDAC0ATABBAEIALQBQADIAJwA=",
+        "user": "SOC-WIN-LAB\\labuser",
+        "processGuid": "{33333333-3333-3333-3333-333333333333}",
+        "parentProcessGuid": "{11111111-1111-1111-1111-111111111111}",
+        "parentImage": "C:\\Windows\\System32\\cmd.exe"
+      }
+    }
+  }
+}

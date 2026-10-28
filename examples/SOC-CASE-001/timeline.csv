@@ -1,0 +1,5 @@
+event_time_utc,original_time,host,record_id,process_guid,user,image,command_line,evidence_reference
+2026-10-28T04:30:00Z,2026-10-28T10:00:00+05:30,SOC-WIN-LAB,101,{22222222-2222-2222-2222-222222222222},SOC-WIN-LAB\labuser,C:\Windows\System32\whoami.exe,whoami,events.jsonl#record-101
+2026-10-28T04:30:05Z,2026-10-28T04:30:05Z,SOC-WIN-LAB,102,{44444444-4444-4444-4444-444444444444},SOC-WIN-LAB\labuser,C:\Windows\System32\systeminfo.exe,systeminfo,events.jsonl#record-102
+2026-10-28T04:30:10Z,2026-10-28T04:30:10Z,SOC-WIN-LAB,103,{33333333-3333-3333-3333-333333333333},SOC-WIN-LAB\labuser,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,powershell.exe -NoProfile -EncodedCommand VwByAGkAdABlAC0ATwB1AHQAcAB1AHQAIAAnAFMATwBDAC0ATABBAEIALQBQADIAJwA=,events.jsonl#record-103
+2026-10-28T04:30:20Z,2026-10-28T04:30:20Z,SOC-WIN-LAB,104,{55555555-5555-5555-5555-555555555555},SOC-WIN-LAB\labuser,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,powershell.exe -NoProfile -Command Write-Output SOC-LAB-P2,events.jsonl#record-104
